@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Navbar from './Navbar';
+import Home from './Home.js';
+import About from './About';
+import Posts from './Posts';
+
+
 
 function App() {
+  const name="chawkii";
+  const wbs="youtube.com";
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+      <Navbar/>
+      <Posts/>
+
+      <Home/>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          {name}
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <a href={wbs}>YOUTUBE</a>
+       
+      <About/>
     </div>
   );
 }
